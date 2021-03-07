@@ -1,5 +1,6 @@
 .navbar .links {
     margin-left: auto;
+    position: absolute;
   }
   .navbar a {
     color: black;

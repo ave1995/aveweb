@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './Home';
 import { About } from './About';
 import { Skills } from './Skills';
+import { Sidebar } from './Sidebar';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Skills />
           </Route>
         </Switch>
+        <Sidebar/>
       </div>
     </Router>
   );
