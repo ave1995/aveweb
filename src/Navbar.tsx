@@ -3,8 +3,7 @@ import './css/Navbar.css';
 
 export const Navbar = () => {
     return (
-
-            <header id="topnav">
+            <header>
                 <div className="">
                     <Link to="/" className="" >Aleš Veselý</Link>
                 </div>
@@ -21,10 +20,6 @@ export const Navbar = () => {
                     </div>
                 </nav>
             </header>
-
-
-
-
     );
 }
 
