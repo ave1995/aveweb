@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
-import './Navbar.css';
+import 'tailwindcss/tailwind.css';
 
 export const Navbar = () => {
     return (
-        <nav className="navbar">
+        <nav className="text-lg font-semibold">
             <div>
                 <div className="links">
                     <Link to="/">Aleš Veselý</Link>
