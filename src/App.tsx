@@ -9,20 +9,22 @@ import { Sidebar } from './Sidebar';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="app">
         <Navbar />
-        <Sidebar/>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/skills">
-            <Skills />
-          </Route>
-        </Switch>
+        <div className="main">
+          <Sidebar />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/about">
+              <About />
+            </Route>
+            <Route exact path="/skills">
+              <Skills />
+            </Route>
+          </Switch>
+        </div>
       </div>
     </Router>
   );
