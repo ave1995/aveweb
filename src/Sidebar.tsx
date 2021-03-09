@@ -1,5 +1,6 @@
 
 import { Link } from 'react-router-dom';
+import './css/Navbar.css';
 
 export const Sidebar = () => {
     return (
