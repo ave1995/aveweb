@@ -1,6 +1,12 @@
 #home {
-    min-height: 100%;
-    padding: 300px;
-    background-color: rgb(19, 224, 36);
     
+    position: relative;
+    float: left;
+}
+
+.home {
+    
+    position: relative;
+    float: left;
+
 }
