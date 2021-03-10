@@ -16,10 +16,10 @@ function App() {
       <div className="app">
         <Navbar />
         <div className="main">
-          <div className="sidebar">
+          <div className="inline">
             <Sidebar />
           </div>
-          <div className="home">
+          <div className="inline">
             <Switch>
               <Route exact path="/">
                 <Home />
