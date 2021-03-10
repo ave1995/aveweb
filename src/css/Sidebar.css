@@ -1,13 +1,12 @@
 .sidebar {
-    display: inline-block;
+   float: left;
     background-color: rgb(209, 19, 19);
-    height: auto;
+    /* height: auto;
     grid-template-columns: 1fr 1fr;
-    display: flex;
-
+    display: flex; */
 }
 
-#sidebar {
+/* #sidebar {
     background: rgb(255, 255, 255);
     height:100%;
     position: fixed;
@@ -16,6 +15,5 @@
     will-change: transform;
     display: flex;
     grid-template-columns: 1fr 1fr;
-
-}
+} */
 

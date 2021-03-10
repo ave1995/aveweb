@@ -1,9 +1,11 @@
-#home {
-    float: right;
-}
+/* #home {
+    display: inline-block;
+    background-color: rgb(209, 19, 19);
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+} */
 
 .home {
-    float: right;
-    background-color: rgb(40, 2, 211);
-    
+   float: right;
 }
