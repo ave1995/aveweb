@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export const Sidebar = () => {
     return (
-        <section id="sidebar">
+        <section className="sidebar">
             <section id="intro">
                 <Link to="/" className="logo">
                     <img src="/img/meme.jpg" alt="" />
