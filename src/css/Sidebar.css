@@ -1,7 +1,21 @@
-#sidebar {
-    display: inline-block;
-}
-
 .sidebar {
     display: inline-block;
+    background-color: rgb(209, 19, 19);
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+
 }
+
+#sidebar {
+    background: rgb(255, 255, 255);
+    height:100%;
+    position: fixed;
+    z-index: 1;
+    overflow-y: auto;
+    will-change: transform;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+
+}
+

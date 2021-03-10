@@ -4,7 +4,7 @@ import './css/Navbar.css';
 export const Navbar = () => {
     return (
             <header>
-                <div className="">
+                <div className="namebox">
                     <Link to="/" className="" >Aleš Veselý</Link>
                 </div>
                 <nav className="">
