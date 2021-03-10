@@ -1,11 +1,18 @@
 
+import { Link } from 'react-router-dom';
+import './css/Navbar.css';
+
 export const Sidebar = () => {
     return (
-        <section className="sidebar">
-            <section className="comm">
-                <div>
-                    <img src="img/meme.jpg" alt="meme"></img>
-                </div>
+        <section id="sidebar">
+            <section id="intro">
+                <Link to="/" className="logo">
+                    <img src="/img/meme.jpg" alt="" />
+                </Link>
+                <header>
+                    <h2>Michael D&apos;Angelo</h2>
+                    <p><a href="mailto:michael.l.dangelo@gmail.com">michael.l.dangelo@gmail.com</a></p>
+                </header>
             </section>
         </section>
     );
