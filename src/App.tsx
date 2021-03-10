@@ -1,4 +1,3 @@
-import 'tailwindcss/tailwind.css';
 import './css/App.css';
 import './css/Home.css';
 import './css/Sidebar.css';
