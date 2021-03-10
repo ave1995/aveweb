@@ -37,6 +37,9 @@ nav .links {
   padding-left: 1.5em;
 }
 
+li {
+  display: inline-block;
+}
 .main {
   font-weight: bold;
   text-transform: uppercase;

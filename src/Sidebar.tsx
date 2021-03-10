@@ -9,10 +9,10 @@ export const Sidebar = () => {
                 <Link to="/" className="logo">
                     <img src="/img/meme.jpg" alt="" />
                 </Link>
-                <header>
+                {/* <header>
                     <h2>Michael D&apos;Angelo</h2>
                     <p><a href="mailto:michael.l.dangelo@gmail.com">michael.l.dangelo@gmail.com</a></p>
-                </header>
+                </header> */}
             </section>
         </section>
     );
