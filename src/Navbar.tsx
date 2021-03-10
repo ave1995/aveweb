@@ -3,13 +3,11 @@ import './css/Navbar.css';
 
 export const Navbar = () => {
     return (
-
-            <header id="topnav">
-                <div className="">
+            <header>
+                <h1 className="main">
                     <Link to="/" className="" >Aleš Veselý</Link>
-                </div>
-                <nav className="">
-                    <div className="links">
+                </h1>
+                <nav className="links">
                         <ul className="">
                             <li className="">
                                 <Link to="/about">O mně</Link>
@@ -18,13 +16,8 @@ export const Navbar = () => {
                                 <Link to="/skills">Dovednosti</Link>
                             </li>
                         </ul>
-                    </div>
                 </nav>
             </header>
-
-
-
-
     );
 }
 
