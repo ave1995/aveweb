@@ -5,3 +5,9 @@
 .inline{
     display: inline-block;
 }
+
+.switch {
+    width: 70em;
+    max-width: 100%;
+    display: block;
+}

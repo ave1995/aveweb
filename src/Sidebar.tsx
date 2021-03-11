@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-
+import './css/Sidebar.css';
 
 export const Sidebar = () => {
     return (
@@ -9,10 +9,7 @@ export const Sidebar = () => {
                 <Link to="/" className="logo">
                     <img src="/img/meme.jpg" alt="" />
                 </Link>
-                {/* <header>
-                    <h2>Michael D&apos;Angelo</h2>
-                    <p><a href="mailto:michael.l.dangelo@gmail.com">michael.l.dangelo@gmail.com</a></p>
-                </header> */}
+                <h3>Aleš Veselý</h3>
             </section>
         </section>
     );

@@ -1,6 +1,4 @@
 import './css/App.css';
-import './css/Home.css';
-import './css/Sidebar.css';
 import { Navbar } from './Navbar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './Home';
@@ -9,7 +7,7 @@ import { Skills } from './Skills';
 import { Sidebar } from './Sidebar';
 
 
-function App() {
+const App = () => {
   return (
     <Router>
       <div className="app">
@@ -19,17 +17,13 @@ function App() {
             <Sidebar />
           </div>
           <div className="inline">
-            <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-              <Route exact path="/about">
-                <About />
-              </Route>
-              <Route exact path="/skills">
-                <Skills />
-              </Route>
-            </Switch>
+            <div className="switch">
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/skills" component={Skills} />
+              </Switch>
+            </div>
           </div>
         </div>
       </div>

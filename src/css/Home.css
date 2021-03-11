@@ -7,6 +7,7 @@
 } */
 
 .home {
-    display:inline-block
+    display:inline-block;
+    background-color: #3C3B3B;
 }
 
