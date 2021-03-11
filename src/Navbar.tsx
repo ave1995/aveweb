@@ -1,25 +1,30 @@
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './css/Navbar.scss';
 
 export const Navbar = () => {
     return (
-        <div className="navbar">
-            <header>
-                <h1 className="main">
-                    <Link to="/" className="" >Aleš Veselý</Link> 
+        <header className="header">
+            <div className="container">
+                <h1 className="ave">
+                    <Link to="/">Aleš <span>Veselý</span></Link>
                 </h1>
+                <div className="burger" >
+                    <FontAwesomeIcon icon="bars" size="lg"/>
+                </div>
                 <nav className="links">
-                        <ul className="">
-                            <li className="">
-                                <Link to="/about">O mně</Link>
-                            </li>
-                            <li className="">
-                                <Link to="/skills">Dovednosti</Link>
-                            </li>
-                        </ul>
+                    <FontAwesomeIcon icon="window-close" />
+                    <ul className="">
+                        <li className="">
+                            <Link to="/about">O mně</Link>
+                        </li>
+                        <li className="">
+                            <Link to="/skills">Dovednosti</Link>
+                        </li>
+                    </ul>
                 </nav>
-            </header>
-        </div>
+            </div>
+        </header>
     );
 }
 

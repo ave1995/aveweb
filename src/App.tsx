@@ -5,25 +5,27 @@ import { About } from './About';
 import { Skills } from './Skills';
 import { Sidebar } from './Sidebar';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+
+import './css/App.scss';
+
+library.add(fas);
 
 const App = () => {
   return (
     <Router>
       <div className="app">
+        <div className="navbar">
           <Navbar />
+        </div>
         <div className="main">
-          <div className="inline">
-            <Sidebar />
-          </div>
-          <div className="inline">
-            <div className="switch">
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/about" component={About} />
-                <Route path="/skills" component={Skills} />
-              </Switch>
-            </div>
-          </div>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/skills" component={Skills} />
+          </Switch>
+          <Sidebar />
         </div>
       </div>
     </Router>

@@ -1,6 +1,4 @@
-
 import { Link } from 'react-router-dom';
-import './css/Sidebar.css';
 
 export const Sidebar = () => {
     return (
