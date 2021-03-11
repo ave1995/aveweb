@@ -1,4 +1,4 @@
-import './css/App.css';
+import './css/App.scss';
 import { Navbar } from './Navbar';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './Home';
@@ -11,7 +11,9 @@ const App = () => {
   return (
     <Router>
       <div className="app">
-        <Navbar />
+        <div className="navbar">
+          <Navbar />
+        </div>
         <div className="main">
           <div className="inline">
             <Sidebar />
