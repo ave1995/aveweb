@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
-//import './css/Navbar.css';
+import './css/Navbar.scss';
 
 export const Navbar = () => {
     return (
+        <div className="navbar">
             <header>
                 <h1 className="main">
                     <Link to="/" className="" >Aleš Veselý</Link> 
@@ -18,6 +19,7 @@ export const Navbar = () => {
                         </ul>
                 </nav>
             </header>
+        </div>
     );
 }
 
