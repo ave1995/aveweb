@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './css/Navbar.scss';
 
+
 export const Navbar = () => {
     return (
         <header className="header">

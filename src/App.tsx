@@ -1,4 +1,5 @@
 import { Navbar } from './Navbar';
+import { NavbarNew } from './components/NavbarNew';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './Home';
 import { About } from './About';
@@ -16,9 +17,7 @@ const App = () => {
   return (
     <Router>
       <div className="app">
-        <div className="navbar">
-          <Navbar />
-        </div>
+        <NavbarNew/>
         <div className="main">
           <Switch>
             <Route exact path="/" component={Home} />
