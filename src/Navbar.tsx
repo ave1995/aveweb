@@ -19,7 +19,9 @@ export const Navbar = () => {
                         </Link>
                     ))}
                 </h1>
-                <HamburgerMenu />
+                <div className="burger">
+                    <HamburgerMenu />
+                </div>
                 {/* <div className="burger" onClick={handleClick}>
                     <FontAwesomeIcon icon="bars" size="lg" />
                 </div> */}

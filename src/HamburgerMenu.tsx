@@ -11,26 +11,8 @@ export const HamburgerMenu = () => {
 
     return (
         <div className="hamburger-container">
-            {/* <nav className="main" id="hamburger-nav">
-                <ul>
-                    {open
-                        ? (
-                            <li className="menu close-menu">
-                                <div onClick={() => { setOpen(!open); console.log(open); }} className="menu-hover">
-                                </div>
-                            </li>
-                        )
-                        : (
-                            <li className="menu open-menu">
-                                <div onClick={() => { setOpen(!open); console.log(open); }} className="menu-hover">
-                                </div>
-                            </li>
-                        )
-                    }
-                </ul>
-            </nav> */}
             <Suspense fallback={<h1>Loading profile...</h1>}>
-                <Menu right isOpen={open}>
+                <Menu right isOpen={open} pageWrapId={"hamburger"} outerContainerId={"hamburger-container"}>
                     <ul className="hamburger-ul">
                         {routes
                             .filter(r => !(r.index))

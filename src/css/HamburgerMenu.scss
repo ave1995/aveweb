@@ -1,7 +1,6 @@
 .hamburger-ul {
-    display: block;
-    li a {
-        border: 0;
-        text-decoration: none;
+    list-style-type: none;
+    a {
+        color: white;
     }
 }
