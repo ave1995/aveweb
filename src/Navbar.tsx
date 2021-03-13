@@ -1,20 +1,31 @@
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './css/Navbar.scss';
+// import { MouseEvent } from 'react';
+import { HamburgerMenu } from './HamburgerMenu'
+
+import routes from '../src/data/routes'
 
 export const Navbar = () => {
+
+    // const handleClick = (e: MouseEvent) => {
+    // }
     return (
         <header className="header">
             <div className="container">
                 <h1 className="ave">
-                    <Link to="/">Aleš <span>Veselý</span></Link>
+                    {routes.filter(r => r.index).map(r => (
+                        <Link key={r.label} to={r.path}>
+                            {r.label}
+                        </Link>
+                    ))}
                 </h1>
-                <div className="burger" >
-                    <FontAwesomeIcon icon="bars" size="lg"/>
-                </div>
-                <nav className="links">
-                    <FontAwesomeIcon icon="window-close" />
-                    <ul className="">
+                <HamburgerMenu />
+                {/* <div className="burger" onClick={handleClick}>
+                    <FontAwesomeIcon icon="bars" size="lg" />
+                </div> */}
+                {/* <nav className="links">
+                    <FontAwesomeIcon icon="times" className="close" />
+                    <ul className="primary-nav">
                         <li className="">
                             <Link to="/about">O mně</Link>
                         </li>
@@ -22,7 +33,7 @@ export const Navbar = () => {
                             <Link to="/skills">Dovednosti</Link>
                         </li>
                     </ul>
-                </nav>
+                </nav> */}
             </div>
         </header>
     );

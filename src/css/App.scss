@@ -1,4 +1,17 @@
-.navbar {
-    background-color: lightgrey;
-    padding: 1em;
+// .navbar {
+//     background-color: lightgrey;
+//     padding: 1em;
+// }
+
+.main {
+    text-align: center;
+    padding: 1.5em;
+    .switch {
+        border-style: solid;
+        background: chocolate;
+        border-radius: 1em;
+        .inner {
+            padding: 1em;
+        }
+    }
 }

@@ -8,6 +8,7 @@ import { Sidebar } from './Sidebar';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 
+
 import './css/App.scss';
 
 library.add(fas);
@@ -15,16 +16,21 @@ library.add(fas);
 const App = () => {
   return (
     <Router>
-      <div className="app">
+      <div className="app" id="outer-container">
         <div className="navbar">
           <Navbar />
         </div>
-        <div className="main">
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/skills" component={Skills} />
-          </Switch>
+        {/* <BurgerMenu/> */}
+        <div className="main" id="page-wrap">
+          <div className="switch">
+            <div className="inner">
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/skills" component={Skills} />
+              </Switch>
+            </div>
+          </div>
           <Sidebar />
         </div>
       </div>
