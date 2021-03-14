@@ -1,0 +1,14 @@
+.sidebar {
+    float: left;
+    padding: 1em;
+    #intro {
+        text-align: center;
+        .portrait {
+            border-radius: 50%;
+            border-style: solid;
+            border-color: black;
+            padding: 1em;
+            background-color: white;
+        }
+    }
+}

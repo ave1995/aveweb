@@ -20,12 +20,16 @@ const App = () => {
           <Navbar />
         </div>
         <div className="main">
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/skills" component={Skills} />
-          </Switch>
-          <Sidebar />
+          <div className="major">
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/skills" component={Skills} />
+            </Switch>
+          </div>
+          <div className="minor">
+            <Sidebar />
+          </div>
         </div>
       </div>
     </Router>

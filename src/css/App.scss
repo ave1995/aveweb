@@ -1,4 +1,28 @@
-.navbar {
-    background-color: lightgrey;
-    padding: 1em;
+.app {
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+
+    .navbar {
+        background-color: lightgrey;
+        padding: 1em;
+    }
+    .main {
+        padding: 2em;
+        .major{
+            border-radius: 0%;
+            border-style: solid;
+            border-color: black;
+            padding: 1em;
+            text-align: left;
+            background-color: white;
+            h2 {
+                margin: 0;
+            }
+            
+
+        }
+        
+    }
 }
