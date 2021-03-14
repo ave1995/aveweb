@@ -1,0 +1,16 @@
+{
+    "sidebarData": [
+        {
+            "label": "Activity",
+            "path": "/activity",
+            "icon": "<GoIcons.GoPulse />",
+            "cName": "nav-text"
+        },
+        {
+            "label": "Projects",
+            "path": "/projects",
+            "icon": "<GoIcons.GoVersions />",
+            "cName": "nav-text"
+        }
+    ]
+}
